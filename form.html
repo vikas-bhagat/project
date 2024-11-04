@@ -1,0 +1,52 @@
+
+<html>
+<body>
+<script language=javascript type="text/javascript">
+var plus,minus,divide,times
+function initialise()
+{
+  plus=document.calc.operator.options[0]
+  minus=document.calc.operator.options[1]
+  divide=document.calc.operator.options[2]
+  times=document.calc.operator.options[3]
+}
+function calculate()
+{
+ x=parseInt(document.calc.val1.value)
+ y=parseInt(document.calc.val2.value)
+ if(plus.selected)
+  document.calc.answer.value=x+y
+ if(minus.selected)
+  document.calc.answer.value=x-y
+ if(divide.selected)
+  document.calc.answer.value=x/y
+ if(times.selected)
+  document.calc.answer.value=x*y
+}
+</script>
+
+</head>
+
+<body onLoad="initialise()">
+<h2>Calculator</h2>
+
+Enter 10 in field 1 then 20 in field 2 press answer. This should give result 30
+<br>
+Change the operation from + to each of the others ( -, /, * ) in turn and press answer.
+<form name="calc" action="post">
+<input type=text name=val1 size=10>
+
+<select name=operator>
+<option value=plus>+
+<option value=minus>-
+<option value=divide>/
+<option value=times>*
+</select>
+
+<input type=text name=val2 size=10>
+=
+<input type=text name=answer size=10>
+<input type=button value=answer onClick="calculate()">
+</form>
+</body>
+</html>

@@ -1,0 +1,15 @@
+*{
+    background-color: black;
+}
+
+.img {
+    color: white;
+    font-size: 200px;
+    font-family: 'Courier New', Courier, monospace;
+    background-image: url("flag1.jfif");
+    background-size: contain;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: flex;
+    justify-content: center;
+}
