@@ -1,0 +1,494 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #1a1a1a;
+    color: #fff;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #333;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #ffcc00; /* Gold color for the logo */
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ffcc00; /* Gold color on hover */
+}
+
+.cta-button {
+    background-color: #ffcc00; /* Gold color for the button */
+    color: #1a1a1a;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #e6b800; /* Darker gold on hover */
+}
+
+
+.hero {
+    position: relative;
+    height: 100vh;
+    background-image: url('burger.jfif'); /* Replace with your image path */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Dark overlay */
+    z-index: 1;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    padding: 20px;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin: 0;
+}
+
+.hero p {
+    font-size: 24px;
+    margin: 10px 0 20px;
+}
+
+.cta-button {
+    background-color: #ffcc00; /* Gold color for the button */
+    color: #1a1a1a;
+    border: none;
+    border-radius: 5px;
+    padding: 15px 30px;
+    font-size: 18px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #e6b800; /* Darker gold on hover */
+}
+
+
+
+.about {
+    background-color: #222; /* Dark background for the section */
+    color: #fff;
+    padding: 60px 20px; /* Padding for spacing */
+    text-align: center;
+}
+
+.about h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #ffcc00; /* Gold color for the heading */
+}
+
+.about p {
+    font-size: 18px;
+    line-height: 1.6; /* Improved readability */
+    margin: 10px 0;
+    max-width: 800px; /* Limiting width for better layout */
+    margin-left: auto;
+    margin-right: auto; /* Center the paragraph */
+}
+
+@media (max-width: 600px) {
+    .about h2 {
+        font-size: 28px; /* Smaller heading on mobile */
+    }
+
+    .about p {
+        font-size: 16px; /* Smaller text on mobile */
+    }
+}
+
+
+
+.menu-highlights {
+    background-color: #1e1e1e; /* Dark background for the section */
+    color: #fff;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.menu-highlights h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+    color: #ffcc00; /* Gold color for the heading */
+}
+
+.menu-items {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Spacing between items */
+    flex-wrap: wrap; /* Wrap items on smaller screens */
+}
+
+.menu-item {
+    background-color: #333; /* Card background color */
+    border-radius: 8px;
+    padding: 20px;
+    width: 250px; /* Fixed width for cards */
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.menu-item:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+}
+
+.menu-item img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.menu-item h3 {
+    font-size: 24px;
+    margin: 10px 0;
+}
+
+.menu-item p {
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+.menu-item span {
+    font-size: 20px;
+    font-weight: bold;
+    color: #ffcc00; /* Gold color for the price */
+}
+
+
+
+.testimonials {
+    background-color: #1e1e1e; /* Dark background for the section */
+    color: #fff;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.testimonials h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+    color: #ffcc00; /* Gold color for the heading */
+}
+
+.testimonial-items {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Spacing between items */
+    flex-wrap: wrap; /* Wrap items on smaller screens */
+}
+
+.testimonial-item {
+    background-color: #333; /* Card background color */
+    border-radius: 8px;
+    padding: 20px;
+    width: 280px; /* Fixed width for cards */
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s; /* Smooth hover effect */
+}
+
+.testimonial-item:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5); /* Shadow on hover */
+}
+
+.testimonial-item p {
+    font-size: 16px;
+    margin: 10px 0;
+    font-style: italic; /* Italic style for quotes */
+}
+
+.testimonial-item h3 {
+    font-size: 18px;
+    margin-top: 10px;
+    color: #ffcc00; /* Gold color for the customer's name */
+}
+
+
+
+
+.location-hours {
+    background-color: #1e1e1e; /* Dark background for the section */
+    color: #fff;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.location-hours h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+    color: #ffcc00; /* Gold color for the heading */
+}
+
+.map {
+    margin-bottom: 40px; /* Space between map and hours */
+}
+
+.hours h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #ffcc00; /* Gold color for the subheading */
+}
+
+.hours p {
+    font-size: 18px;
+    margin: 5px 0;
+}
+
+
+
+
+.social-media {
+    background-color: #1e1e1e; /* Dark background for the section */
+    color: #fff;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.social-media h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+    color: #ffcc00; /* Gold color for the heading */
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Spacing between icons */
+}
+
+.social-icon img {
+    width: 40px; /* Set size for icons */
+    transition: transform 0.3s; /* Animation on hover */
+}
+
+.social-icon:hover img {
+    transform: scale(1.1); /* Slightly enlarge on hover */
+}
+
+
+
+
+.newsletter {
+    background-color: #1e1e1e; /* Dark background for the section */
+    color: #fff;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.newsletter h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #ffcc00; /* Gold color for the heading */
+}
+
+.newsletter p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.newsletter-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px; /* Spacing between input and button */
+}
+
+.newsletter-form input {
+    padding: 15px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+}
+
+.newsletter-form button {
+    background-color: #ffcc00; /* Gold color for the button */
+    color: #1a1a1a; /* Dark text for contrast */
+    border: none;
+    border-radius: 5px;
+    padding: 15px 25px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.newsletter-form button:hover {
+    background-color: #e6b800; /* Darker gold on hover */
+}
+
+
+
+.footer {
+    background-color: #222; /* Dark background for the footer */
+    color: #fff;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.footer-content {
+    max-width: 1200px; /* Limit the width for better layout */
+    margin: 0 auto; /* Center the content */
+}
+
+.footer-links {
+    margin-bottom: 20px; /* Space between links and info */
+}
+
+.footer-links a {
+    color: #ffcc00; /* Gold color for links */
+    text-decoration: none;
+    margin: 0 15px; /* Spacing between links */
+    transition: color 0.3s;
+}
+
+.footer-links a:hover {
+    color: #e6b800; /* Darker gold on hover */
+}
+
+.footer-info p {
+    margin: 5px 0;
+    font-size: 14px;
+}
+
+
+
+
+.design-considerations {
+    background-color: #1e1e1e; /* Dark background for the section */
+    color: #fff;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.design-considerations h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+    color: #ffcc00; /* Gold color for the heading */
+}
+
+.considerations {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* Wrap items on smaller screens */
+    gap: 20px; /* Space between items */
+}
+
+.consideration-item {
+    background-color: #333; /* Card background color */
+    border-radius: 8px;
+    padding: 20px;
+    width: 250px; /* Fixed width for cards */
+    transition: transform 0.3s; /* Animation on hover */
+}
+
+.consideration-item:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+}
+
+.consideration-item h3 {
+    font-size: 24px;
+    margin: 10px 0;
+}
+
+.consideration-item p {
+    font-size: 16px;
+}
+
+
+
+
+.additional-features {
+    background-color: #1e1e1e; /* Dark background for the section */
+    color: #fff;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.additional-features h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+    color: #ffcc00; /* Gold color for the heading */
+}
+
+.features-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* Wrap items on smaller screens */
+    gap: 20px; /* Space between items */
+}
+
+.feature-item {
+    background-color: #333; /* Card background color */
+    border-radius: 8px;
+    padding: 20px;
+    width: 250px; /* Fixed width for cards */
+    transition: transform 0.3s, box-shadow 0.3s; /* Animation on hover */
+}
+
+.feature-item:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5); /* Shadow on hover */
+}
+
+.feature-item h3 {
+    font-size: 24px;
+    margin: 10px 0;
+}
+
+.feature-item p {
+    font-size: 16px;
+}
+
+
+
+
+
+
